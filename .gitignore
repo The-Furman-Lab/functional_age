@@ -1,0 +1,53 @@
+# --- Project data & outputs (individual-level UKB data is under a DUA: never commit) ---
+/data
+/output/
+/revision/
+/code/backup/
+
+# --- R ---
+.Rhistory
+.Rapp.history
+.RData
+.Ruserdata
+.Rproj.user/
+*.Rproj
+*_cache/
+/*_files/
+Rplots.pdf
+.Rprofile
+
+# --- Python ---
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Compiled / native ---
+*.o
+*.so
+*.dll
+*.dylib
+
+# --- Logs & temp ---
+*.log
+*.tmp
+*.swp
+*~
+
+# --- OS & editor ---
+.DS_Store
+Thumbs.db
+.idea/
+
+.pc
+/figures/
+/docs/
+/repro/
+*.md
+

@@ -1,0 +1,24 @@
+default:
+  # Participant-level phenotype: one row per participant, columns named
+  # "<field_id>-<instance>.<array>" (e.g. "20023-0.0"), id column "eid". 
+  # Compose from UK Biobank Research Analysis Platform (RAP).
+  phenotype_table: "data/phenotype.csv"
+
+  # UK Biobank field metadata (the showcase field table) and the curated field
+  # lists / coding tables used to build domains, diseases and lifestyle factors.
+  field_metadata: "data/field.txt"
+  tian_fields:    "data/tian_fields.xlsx"
+  coding_dir:     "data/coding"
+
+  proteomics:   "data/proteomics.rds"
+  biochemistry: "data/biochemistry.rds"
+
+  mortality:    "data/mortality_data.csv"
+  withdrawals:  "data/withdraw.csv"
+
+  output_root: "output"
+
+  visit_mode:     "median"   
+  min_cutoff:     10000      # drop fields measured in fewer participants than this
+  feature_cutoff: 200000     # drop model features with fewer complete cases
+  seed:           123
